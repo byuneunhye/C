@@ -5,7 +5,7 @@ int main()
     double a, b;
     scanf("%lf %lf",&a,&b);
     double w,x;
-    w=(float)(a-100)*0.9;
+    w=(float)(a-100)*0.9;//강제형 변환 안 하면 오류남
     x=(float)(b-w)*100/w;
     if(x<=10)
        printf("정상");
